@@ -1,0 +1,236 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #293133;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+
+h2,
+nav li {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a,
+a:visited {
+    text-decoration: none;          /*macht die Linie unter den Links weg*/
+    color: inherit;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+.container {
+    padding: 1em;                   /*so kriegen alle Container-Elemente den gleichen Abstand zum Rand*/
+    margin-bottom: 1em;
+}
+
+/* =================================
+  Header Styles
+==================================== */
+
+nav li{
+    list-style: none;
+    background-color: white;
+    margin: 5px;                    /*sorgt für Abstände zwischen den Navipunkten*/
+}
+
+nav a {
+    display: block;
+    padding: 10px;                  /*um die Linkfläche der Navi größer zu machen*/
+}
+
+
+
+.profile-picture {
+    width: 60%;                     /*macht das Profilbild kleiner*/
+}
+
+.intro {
+    clear: both;                    /*damit Navi und Introbild nicht ineinander laufen*/
+}
+
+
+/* =================================
+  Content Styles
+==================================== */
+
+.main-content{
+    background-color: #fff;         /*macht den Contentbereich weiß*/
+
+}
+
+.col {
+    margin: 1em;
+}
+
+.col img {
+    width: 100%;                    /*setzt das Bild volle Breite*/
+}
+
+.skills ul {
+    margin-bottom: 2em;
+}
+
+.skills li {
+    display: inline-block;
+    padding: 15px;
+    background-color: powderblue;
+    border-radius: 40%;
+}
+
+
+/* =================================
+  Footer and Contact Styles
+==================================== */
+
+.contact {
+    font-family: 'Special Elite';
+}
+
+.phone p,
+.email p{
+    display: inline-block;
+    padding-right: 15px;            /*damit Überschrift und Link getrennter sind*/
+}
+
+.contact a {
+    padding: 15px;
+}
+
+.contact-data {
+    border-bottom: 1px solid white;
+}
+
+footer p,
+footer a,
+footer ul {
+    display: inline;
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 3em;
+}
+
+.footer-name {
+    float: left;
+}
+
+.totop,
+.nav-bottom {
+    float: right;
+    text-transform: uppercase;
+}
+
+.nav-bottom {
+        display: none;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media screen and (min-width: 768px){
+
+
+    nav li{
+        display: inline-block;
+        background-color: inherit;
+    }
+
+    .intro p {
+        float: left;
+        width: 55%;
+        text-align: left;
+    }
+
+    .profile-picture {
+        float: right;
+        width: 40%;
+    }
+
+    .col {
+        width: 45%;
+        float: left;
+    }
+
+    .col:nth-child(even) {
+        clear: left;
+        margin-right: 0px;
+        }
+
+    .contact-text {
+        margin: auto;
+        width: 60%; /*um den Text wie in der Vorlage nur über die halbe Breite zu setzen*/
+    }
+
+    .totop {
+        display: none; /*um einen device-spezifischen Footer auszuspielen*/
+    }
+
+    .nav-bottom {
+            display: block;
+    }
+
+    .nav-bottom li{
+        float: left;
+        margin: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    h1,
+    nav {
+        margin-top: 22px; /*um die Navigation auf einer Höhe mit der H1 zu haben*/
+    }
+
+    h1 {
+        float: left;
+    }
+
+    nav{
+        float: right;
+    }
+
+    .col {
+        width: 30%;
+        float: left;
+        margin-right: 0px;
+    }
+
+    .col:nth-child(even) {
+        clear: none;
+    }
+
+    .col:nth-child(4n+1) {
+        clear: left;            /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/
+    }
+
+
+}
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
