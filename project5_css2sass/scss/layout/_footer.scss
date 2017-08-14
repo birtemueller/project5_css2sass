@@ -1,0 +1,47 @@
+/* =================================
+  Footer and Contact Styles
+==================================== */
+
+.contact {
+    font-family: 'Special Elite';
+
+    a {
+        padding: 15px;
+    }
+}
+
+.phone p,
+.email p{
+    display: inline-block;
+    padding-right: 15px;            /*damit Überschrift und Link getrennter sind*/
+}
+
+.contact-data {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    p,
+    a,
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 15px;
+        margin-bottom: 3em;
+    }
+}
+
+.footer-name {
+    float: left;
+}
+
+.totop,
+.nav-bottom {
+    float: right;
+    text-transform: uppercase;
+}
+
+.nav-bottom {
+    display: none;
+}
+

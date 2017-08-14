@@ -1,0 +1,38 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #293133;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+
+h2,
+nav li {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a,
+a:visited {
+    text-decoration: none;          /*macht die Linie unter den Links weg*/
+    color: inherit;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+.container {
+    padding: 1em;                   /*so kriegen alle Container-Elemente den gleichen Abstand zum Rand*/
+    margin-bottom: 1em;
+}

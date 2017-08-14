@@ -1,0 +1,24 @@
+/* =================================
+  Header Styles
+==================================== */
+
+nav {
+    li{
+        list-style: none;
+        background-color: white;
+        margin: 5px;                    /*sorgt für Abstände zwischen den Navipunkten*/
+    }
+
+    a {
+        display: block;
+        padding: 10px;                  /*um die Linkfläche der Navi größer zu machen*/
+    }
+}
+
+.profile-picture {
+    width: 60%;                     /*macht das Profilbild kleiner*/
+}
+
+.intro {
+    clear: both;                    /*damit Navi und Introbild nicht ineinander laufen*/
+}

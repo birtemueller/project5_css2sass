@@ -1,0 +1,30 @@
+/* =================================
+  Content Styles
+==================================== */
+
+.main-content{
+    background-color: #fff;         /*macht den Contentbereich weiß*/
+
+}
+
+.col {
+    margin: 1em;
+
+    img {
+        width: 100%;                    /*setzt das Bild volle Breite*/
+    }
+}
+
+.skills {
+    ul {
+        margin-bottom: 2em;
+    }
+
+    li {
+        display: inline-block;
+        padding: 15px;
+        background-color: powderblue;
+        border-radius: 40%;
+    }
+
+}
