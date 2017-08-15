@@ -2,11 +2,30 @@
   Header Styles
 ==================================== */
 
+
+h1 {
+    @media #{$brk-wide} {
+        margin-top: 22px; /*um die Navigation auf einer Höhe mit der H1 zu haben*/
+        float: left;
+    }
+}
+
+
 nav {
+
+    @media #{$brk-wide} {
+        margin-top: 22px; /*um die Navigation auf einer Höhe mit der H1 zu haben*/
+        float: right;
+    }
+
     li{
         list-style: none;
-        background-color: white;
+        background-color: $body-color;
         margin: 5px;                    /*sorgt für Abstände zwischen den Navipunkten*/
+        @media #{$brk-narrow} {
+            display: inline-block;
+            background-color: inherit;
+        }
     }
 
     a {
@@ -17,8 +36,21 @@ nav {
 
 .profile-picture {
     width: 60%;                     /*macht das Profilbild kleiner*/
+
+    @media #{$brk-narrow} {
+        float: right;
+        width: 40%;
+    }
 }
 
 .intro {
     clear: both;                    /*damit Navi und Introbild nicht ineinander laufen*/
+
+    p {
+        @media #{$brk-narrow} {
+            float: left;
+            width: 55%;
+            text-align: left;
+        }
+    }
 }

@@ -1,0 +1,23 @@
+/* =================================
+  Color Variables
+==================================== */
+
+// Descriptive color variables
+
+$white: #fff;
+$anthracite: #293133;
+$pink: #ffc0cb;
+$light-grey: #f7f7f7;
+$light-blue: #f7f7f7;
+
+// Functional color variables
+
+$body-color: $light-grey;
+$content-color: $white;
+$border-color: $white;
+$primary-text-color: $anthracite;
+
+// Media query breakpoints
+
+$brk-narrow : '(min-width: 768px)';
+$brk-wide   : '(min-width: 1024px)';

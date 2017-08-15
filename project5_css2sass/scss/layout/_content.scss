@@ -3,12 +3,39 @@
 ==================================== */
 
 .main-content{
-    background-color: #fff;         /*macht den Contentbereich weiß*/
+    background-color: $content-color;         /*macht den Contentbereich weiß*/
 
 }
 
 .col {
     margin: 1em;
+
+    @media #{$brk-narrow} {
+        width: 45%;
+        float: left;
+    }
+
+    @media #{$brk-wide} {
+        width: 30%;
+        float: left;
+        margin-right: 0px;
+    }
+
+    &:nth-child(even) {
+        @media #{$brk-narrow} {
+            clear: left;
+            margin-right: 0px;
+        }
+
+        @media #{$brk-wide} {
+            clear: none;
+        }
+    }
+
+    &:nth-child(4n+1) {
+        clear: left;            /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/
+    }
+
 
     img {
         width: 100%;                    /*setzt das Bild volle Breite*/
@@ -23,7 +50,7 @@
     li {
         display: inline-block;
         padding: 15px;
-        background-color: powderblue;
+        background-color: $light-blue;
         border-radius: 40%;
     }
 

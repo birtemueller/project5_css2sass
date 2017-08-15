@@ -16,8 +16,15 @@
     padding-right: 15px;            /*damit Überschrift und Link getrennter sind*/
 }
 
+.contact-text {
+    @media #{$brk-narrow} {
+        margin: auto;
+        width: 60%; /*um den Text wie in der Vorlage nur über die halbe Breite zu setzen*/
+    }
+}
+
 .contact-data {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $border-color;
 }
 
 footer {
@@ -35,6 +42,12 @@ footer {
     float: left;
 }
 
+.totop {
+    @media #{$brk-narrow} {
+        display: none; /*um einen device-spezifischen Footer auszuspielen*/
+    }
+}
+
 .totop,
 .nav-bottom {
     float: right;
@@ -43,5 +56,16 @@ footer {
 
 .nav-bottom {
     display: none;
+
+    @media #{$brk-narrow} {
+        display: block;
+    }
+
+    li {
+        @media #{$brk-narrow} {
+            float: left;
+            margin: 10px;
+        }
+    }
 }
 
