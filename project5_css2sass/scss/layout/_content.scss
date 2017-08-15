@@ -33,7 +33,9 @@
     }
 
     &:nth-child(4n+1) {
-        clear: left;            /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/
+        @media #{$brk-wide} {
+            clear: left;            /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/
+        }
     }
 
 
