@@ -384,8 +384,9 @@ ul {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
   color: #293133;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   background-color: #f7f7f7; }
 
@@ -413,35 +414,35 @@ a:hover {
 /* =================================
   Header Styles
 ==================================== */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   h1 {
     margin-top: 22px;
-    /*um die Navigation auf einer Höhe mit der H1 zu haben*/
+    /*um die Navigation auf einer H├Âhe mit der H1 zu haben*/
     float: left; } }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   nav {
     margin-top: 22px;
-    /*um die Navigation auf einer Höhe mit der H1 zu haben*/
+    /*um die Navigation auf einer H├Âhe mit der H1 zu haben*/
     float: right; } }
 nav li {
   list-style: none;
   background-color: #f7f7f7;
   margin: 5px;
-  /*sorgt für Abstände zwischen den Navipunkten*/ }
-  @media (min-width: 768px) {
+  /*sorgt f├╝r Abst├ñnde zwischen den Navipunkten*/ }
+  @media screen and (min-width: 768px) {
     nav li {
       display: inline-block;
       background-color: inherit; } }
 nav a {
   display: block;
   padding: 10px;
-  /*um die Linkfläche der Navi größer zu machen*/ }
+  /*um die Linkfl├ñche der Navi gr├Â├ƒer zu machen*/ }
 
 .profile-picture {
   width: 60%;
   /*macht das Profilbild kleiner*/ }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .profile-picture {
       float: right;
       width: 40%; } }
@@ -449,7 +450,7 @@ nav a {
 .intro {
   clear: both;
   /*damit Navi und Introbild nicht ineinander laufen*/ }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .intro p {
       float: left;
       width: 55%;
@@ -460,29 +461,30 @@ nav a {
 ==================================== */
 .main-content {
   background-color: #fff;
-  /*macht den Contentbereich weiß*/ }
+  /*macht den Contentbereich wei├ƒ*/ }
 
 .col {
   margin: 1em; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .col {
       width: 45%;
       float: left; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .col {
       width: 30%;
       float: left;
       margin-right: 0px; } }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .col:nth-child(even) {
       clear: left;
       margin-right: 0px; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .col:nth-child(even) {
       clear: none; } }
-  .col:nth-child(4n+1) {
-    clear: left;
-    /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/ }
+  @media screen and (min-width: 1024px) {
+    .col:nth-child(4n+1) {
+      clear: left;
+      /*damit die Elemente noch in Dreierreihen bleiben, auch wenn eins mehr Text hat*/ } }
   .col img {
     width: 100%;
     /*setzt das Bild volle Breite*/ }
@@ -492,7 +494,7 @@ nav a {
 .skills li {
   display: inline-block;
   padding: 15px;
-  background-color: #f7f7f7;
+  background-color: #b0e0e6;
   border-radius: 40%; }
 
 /* =================================
@@ -507,13 +509,13 @@ nav a {
 .email p {
   display: inline-block;
   padding-right: 15px;
-  /*damit Überschrift und Link getrennter sind*/ }
+  /*damit ├£berschrift und Link getrennter sind*/ }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact-text {
     margin: auto;
     width: 60%;
-    /*um den Text wie in der Vorlage nur über die halbe Breite zu setzen*/ } }
+    /*um den Text wie in der Vorlage nur ├╝ber die halbe Breite zu setzen*/ } }
 
 .contact-data {
   border-bottom: 1px solid #fff; }
@@ -529,7 +531,7 @@ footer ul {
 .footer-name {
   float: left; }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .totop {
     display: none;
     /*um einen device-spezifischen Footer auszuspielen*/ } }
@@ -541,10 +543,10 @@ footer ul {
 
 .nav-bottom {
   display: none; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .nav-bottom {
       display: block; } }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .nav-bottom li {
       float: left;
       margin: 10px; } }

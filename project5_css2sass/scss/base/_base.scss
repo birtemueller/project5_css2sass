@@ -6,8 +6,8 @@
 }
 
 body {
+    @include text(16px, $color: $primary-text-color);
     font-family: 'Raleway', sans-serif;
-    color: $primary-text-color;
     text-align: center;
     background-color: $body-color;
 }

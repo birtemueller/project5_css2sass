@@ -19,5 +19,5 @@ $primary-text-color: $anthracite;
 
 // Media query breakpoints
 
-$brk-narrow : '(min-width: 768px)';
-$brk-wide   : '(min-width: 1024px)';
+$brk-narrow : 'screen and (min-width: 768px)';
+$brk-wide   : 'screen and (min-width: 1024px)';
