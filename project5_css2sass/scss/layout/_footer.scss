@@ -12,8 +12,7 @@
 
 .phone p,
 .email p{
-    display: inline-block;
-    padding-right: 15px;            /*damit Überschrift und Link getrennter sind*/
+    @extend .lists;            /*damit Überschrift und Link getrennter sind*/
 }
 
 .contact-text {

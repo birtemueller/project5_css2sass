@@ -50,8 +50,7 @@
     }
 
     li {
-        display: inline-block;
-        padding: 15px;
+        @extend .lists;
         background-color: $light-blue;
         border-radius: 40%;
     }

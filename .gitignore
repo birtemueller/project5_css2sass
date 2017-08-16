@@ -2,6 +2,7 @@
 ### Sass template
 .sass-cache/
 *.css.map
+*.css
 ### Example user template template
 ### Example user template
 
