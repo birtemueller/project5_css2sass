@@ -1,13 +1,10 @@
 
-/* ---- Float clearfix ---- */
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
-
 .lists {
     display: inline-block;
     padding: 15px;
+}
+
+.gutter {
+    padding: 1em;
+    margin-bottom: 1em;
 }

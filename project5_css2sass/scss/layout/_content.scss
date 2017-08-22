@@ -4,7 +4,10 @@
 
 .main-content{
     background-color: $content-color;         /*macht den Contentbereich weiß*/
+}
 
+.container {
+    @extend .gutter;
 }
 
 .col {
@@ -18,13 +21,13 @@
     @media #{$brk-wide} {
         width: 30%;
         float: left;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     &:nth-child(even) {
         @media #{$brk-narrow} {
             clear: left;
-            margin-right: 0px;
+            margin-right: 0;
         }
 
         @media #{$brk-wide} {

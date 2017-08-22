@@ -3,10 +3,10 @@
 ==================================== */
 
 .contact {
-    font-family: 'Special Elite';
+    @include text($special-elite-font-stack, 16px, $color: $primary-text-color);
 
     a {
-        padding: 15px;
+        @extend .lists;
     }
 }
 
@@ -32,8 +32,7 @@ footer {
     ul {
         display: inline;
         margin: 0;
-        padding: 15px;
-        margin-bottom: 3em;
+        @extend .gutter;
     }
 }
 
