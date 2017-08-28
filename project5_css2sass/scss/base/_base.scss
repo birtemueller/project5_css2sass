@@ -14,7 +14,7 @@ body {
 
 h2,
 nav li {
-    text-transform: uppercase;
+    @include uppercase;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 a,
 a:visited {
     text-decoration: none;          /*macht die Linie unter den Links weg*/
-    color: inherit;
+    color: $secondary-text-color;
 }
 
 a:hover {

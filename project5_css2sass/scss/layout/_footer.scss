@@ -49,7 +49,7 @@ footer {
 .totop,
 .nav-bottom {
     float: right;
-    text-transform: uppercase;
+    @include uppercase;
 }
 
 .nav-bottom {

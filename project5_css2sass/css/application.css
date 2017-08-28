@@ -2,16 +2,16 @@
 /* =================================
   Color Variables
 ==================================== */
-/* ---- Float clearfix ---- */
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both; }
-
-.lists, .skills li, .phone p,
+.lists, .skills li, .contact a, .phone p,
 .email p {
   display: inline-block;
   padding: 15px; }
+
+.gutter, .container, footer p,
+footer a,
+footer ul {
+  padding: 1em;
+  margin-bottom: 1em; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -389,15 +389,16 @@ ul {
   box-sizing: border-box; }
 
 body {
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #293133;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   background-color: #f7f7f7; }
 
 h2,
 nav li {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #333d3f; }
 
 p {
   line-height: 1.5; }
@@ -406,15 +407,16 @@ a,
 a:visited {
   text-decoration: none;
   /*macht die Linie unter den Links weg*/
-  color: inherit; }
+  color: #333d3f; }
 
 a:hover {
   background-color: #ffc0cb; }
 
-.container {
-  padding: 1em;
-  /*so kriegen alle Container-Elemente den gleichen Abstand zum Rand*/
-  margin-bottom: 1em; }
+/* ---- Float clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both; }
 
 /* =================================
   Header Styles
@@ -478,11 +480,11 @@ nav a {
     .col {
       width: 30%;
       float: left;
-      margin-right: 0px; } }
+      margin-right: 0; } }
   @media screen and (min-width: 768px) {
     .col:nth-child(even) {
       clear: left;
-      margin-right: 0px; } }
+      margin-right: 0; } }
   @media screen and (min-width: 1024px) {
     .col:nth-child(even) {
       clear: none; } }
@@ -504,9 +506,9 @@ nav a {
   Footer and Contact Styles
 ==================================== */
 .contact {
-  font-family: 'Special Elite'; }
-  .contact a {
-    padding: 15px; }
+  font-family: "Special Elite", Georgia, serif;
+  font-size: 16px;
+  color: #293133; }
 
 .phone p,
 .email p {
@@ -525,9 +527,7 @@ footer p,
 footer a,
 footer ul {
   display: inline;
-  margin: 0;
-  padding: 15px;
-  margin-bottom: 3em; }
+  margin: 0; }
 
 .footer-name {
   float: left; }
@@ -540,7 +540,8 @@ footer ul {
 .totop,
 .nav-bottom {
   float: right;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #333d3f; }
 
 .nav-bottom {
   display: none; }
