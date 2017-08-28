@@ -19,11 +19,11 @@ nav {
 
     li{
         list-style: none;
-        background-color: $body-color;
+        background-color: $white;
         margin: 5px;                    /*sorgt für Abstände zwischen den Navipunkten*/
         @media #{$brk-narrow} {
             display: inline-block;
-            background-color: inherit;
+            //background-color: inherit;
         }
     }
 
